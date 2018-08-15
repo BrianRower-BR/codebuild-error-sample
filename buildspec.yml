@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - virtualenv -p python3 .python
+      - . .python/bin/activate
+      - pip install -r requirements.txt
+      - "[ ! -d ./src/zappa]"

@@ -1,0 +1,1 @@
+-e git+git://github.com/brianrower/Zappa.git@c7e75fd2bd0205e5ebef74bcbd5f6d07aa99bc0c#egg=zappa

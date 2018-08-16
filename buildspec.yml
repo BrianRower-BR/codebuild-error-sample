@@ -3,7 +3,10 @@ version: 0.2
 phases:
   build:
     commands:
+      - cd src
       - virtualenv -p python3 .python
       - . .python/bin/activate
-      - pip install -r requirements.txt
-      - "[ ! -d ./src/zappa]"
+      - pip install -r ../requirements.txt
+      - which zappa
+      - which python
+      - zappa package dev -o /tmp/lambda-package.zip

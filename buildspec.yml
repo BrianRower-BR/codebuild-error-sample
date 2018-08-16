@@ -9,4 +9,6 @@ phases:
       - pip install -r ../requirements.txt
       - which zappa
       - which python
+      - env
+      - ls -l .python/bin
       - zappa package dev -o /tmp/lambda-package.zip
